@@ -5,14 +5,14 @@ A lightweight flyover side menu component for iOS with the ```UIDynamic```'s bou
 ![](https://dl.dropboxusercontent.com/u/99657845/sideMenu.gif)
 
 ## Requirements
-* Xcode 6.3 or higher
-* iOS 8 or higher
+* Xcode 8 or higher
+* iOS 9 or higher
 
 ## Installation
 ### CocoaPods
 The recommended way for installating `SwiftySideMenu` is via the [CocoaPods](http://cocoapods.org/) package manager
 ``` bash
-platform :ios, '8.0'
+platform :ios, '9.0'
 pod 'SwiftySideMenu', '~> 1.0'
 ```
 ### Manual Install

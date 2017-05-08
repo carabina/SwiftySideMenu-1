@@ -21,7 +21,6 @@ class MyMenuTableViewController: UITableViewController {
         
         tableView.selectRow(at: IndexPath(row: selectedMenuItem, section: 0), animated: false, scrollPosition: .middle)
         
-       
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,12 +35,12 @@ class MyMenuTableViewController: UITableViewController {
         return 1
     }
 
-     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
         return 4
     }
 
-     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         var cell = tableView.dequeueReusableCell(withIdentifier: "CELL")
         
@@ -59,11 +58,13 @@ class MyMenuTableViewController: UITableViewController {
         return cell!
     }
     
-     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50.0
     }
     
-     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+   
+    
+   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         print("did select row: \(indexPath.row)")
         

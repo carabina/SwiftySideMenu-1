@@ -2,7 +2,7 @@
 
 A lightweight flyover side menu component for iOS with the ```UIDynamic```'s bouncing animation, ```UIGestures``` and ```UIBlurEffect```. Allows you to use native ```UINavigationController```'s logic to manage view controllers. The component is written in **Swift**.
 
-![](https://dl.dropboxusercontent.com/u/99657845/sideMenu.gif)
+![](https://github.com/Sadmansamee/SwiftySideMenu/blob/master/example.gif)
 
 ## Requirements
 * Xcode 8 or higher
